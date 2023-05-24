@@ -1,0 +1,75 @@
+.details {
+    font-size: 30px;
+    color: red;
+    padding: 5px;
+    display:flex;
+    justify-content: center;
+}
+.user_card-container {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding: 5px;
+    margin-bottom: 15px;  
+    margin-top: 25px; 
+}
+.user_card-container li {
+    list-style: none;
+}
+
+.user_card {
+    width: 250px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    padding: 15px;
+    background-color: lightblue;
+    border: 1px rgba(136, 90, 136, 0.667) solid;
+    box-shadow: 1px 1px 2px 1px darkblue;
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: pointer;
+}
+.user_card:hover {
+    border: 2px purple solid;
+}
+.user_card h2 {
+    margin-top: 0px;
+    border-bottom: 1px darkred solid;
+}
+.user_card h3 {
+    color: darkblue;
+    margin-top: 10px;
+}
+.user_card div {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    border-top: 1px darkgreen;
+    padding-top:  10px;
+}
+.btn_delete {
+    width: 50px;
+    height: 30px;
+    background-color: red;
+    color: white;
+    font-size: 10px;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+    cursor: pointer;
+}
+.btn_delete:hover {
+    transform: scale(1.2);
+}
+.btn_edit {
+    width: 50px;
+    height: 30px;
+    background-color: darkblue;
+    cursor: pointer;
+    color: white;
+    font-size: 10px;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.btn_edit:hover {
+    transform: scale(1.2);
+}

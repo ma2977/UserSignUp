@@ -1,0 +1,12 @@
+.header{
+    padding: 0 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+
+}
+h1 {
+    
+    font-size: 40px;
+    font-family: fantasy;
+}
