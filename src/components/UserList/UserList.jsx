@@ -1,7 +1,22 @@
 import "./UserList.css";
 
-const UserList = ({ users, onEditUser, onDeleteUser }) => {
-if(!users.length) return <p className="details">Without users</p>;
+//const users = [ first_name, last_name, email, password, birthday];
+
+//<UserList users={[]} onEditUser={handleEditUser} onDeleteUser={handleDeleteUser} />
+const users = [
+  { id: 1, first_name: 'John', last_name: 'Doe', email: 'john@example.com', birthday: '1990-01-01' },
+  // Add more user objects as needed
+];
+
+// const UserList = ({ users, onEditUser, onDeleteUser }) => {
+//   if (!users || !users.length) {
+//     return <p className="details">Without users</p>;
+ 
+// };
+// <UserList users={[]} onEditUser={handleEditUser} onDeleteUser={handleDeleteUser} />
+ const UserList = ({ users, onEditUser, onDeleteUser }) => {
+
+ if(!users.length) return <p className="details">Without users</p>;
   return (
     <ul className="user_card-container">
         {users.map((user) => (
@@ -25,5 +40,5 @@ if(!users.length) return <p className="details">Without users</p>;
     </ul>
   );
 };
-
+//};
 export default UserList;
